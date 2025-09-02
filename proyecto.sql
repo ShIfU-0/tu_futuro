@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 04-11-2022 a las 01:08:01
--- Versión del servidor: 10.4.20-MariaDB
--- Versión de PHP: 8.0.8
+-- Servidor: localhost
+-- Tiempo de generación: 02-09-2025 a las 07:08:48
+-- Versión del servidor: 10.4.32-MariaDB
+-- Versión de PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -31,14 +31,7 @@ CREATE TABLE `logg` (
   `id_admin` int(11) NOT NULL,
   `usuario` varchar(20) NOT NULL,
   `contra` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `logg`
---
-
-INSERT INTO `logg` (`id_admin`, `usuario`, `contra`) VALUES
-(1, 'usuario1', '123');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -49,17 +42,7 @@ INSERT INTO `logg` (`id_admin`, `usuario`, `contra`) VALUES
 CREATE TABLE `preguntas` (
   `id_preg` int(11) NOT NULL,
   `pregunta` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `preguntas`
---
-
-INSERT INTO `preguntas` (`id_preg`, `pregunta`) VALUES
-(1, 'que tanto te gusta la medicina'),
-(2, 'que tanto te gusta la program'),
-(3, 'no te gusta la programacion '),
-(4, 'te gusta la programacion ');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -155,29 +138,7 @@ CREATE TABLE `respuestas` (
   `area3` int(11) NOT NULL,
   `area4` int(11) NOT NULL,
   `area5` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `respuestas`
---
-
-INSERT INTO `respuestas` (`id_res`, `usuario1`, `p1`, `p2`, `p3`, `p4`, `p5`, `p6`, `p7`, `p8`, `p9`, `p10`, `p11`, `p12`, `p13`, `p14`, `p15`, `p16`, `p17`, `p18`, `p19`, `p20`, `p21`, `p22`, `p23`, `p24`, `p25`, `p26`, `p27`, `p28`, `p29`, `p30`, `p31`, `p32`, `p33`, `p34`, `p35`, `p36`, `p37`, `p38`, `p39`, `p40`, `p41`, `p42`, `p43`, `p44`, `p45`, `p46`, `p47`, `p48`, `p49`, `p50`, `p51`, `p52`, `p53`, `p54`, `p55`, `p56`, `p57`, `p58`, `p59`, `p60`, `p61`, `p62`, `p63`, `p64`, `p65`, `p66`, `p67`, `p68`, `p69`, `p70`, `p71`, `p72`, `p73`, `p74`, `p75`, `p76`, `p77`, `p78`, `p79`, `p80`, `area1`, `area2`, `area3`, `area4`, `area5`) VALUES
-(1, '', 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(2, '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(3, '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(4, '', 2, 2, 3, 2, 0, 3, 2, 3, 3, 2, 1, 4, 2, 4, 2, 3, 2, 3, 2, 4, 3, 2, 2, 2, 3, 3, 4, 4, 4, 3, 4, 3, 2, 3, 2, 3, 3, 2, 2, 1, 1, 4, 3, 3, 2, 3, 3, 3, 2, 2, 4, 4, 4, 4, 4, 4, 2, 4, 1, 3, 1, 4, 2, 3, 2, 4, 4, 4, 0, 3, 2, 1, 3, 1, 3, 2, 2, 3, 2, 4, 0, 0, 0, 0, 0),
-(5, '', 2, 2, 3, 2, 0, 3, 2, 3, 3, 2, 1, 4, 2, 4, 2, 3, 2, 3, 2, 4, 3, 2, 2, 2, 3, 3, 4, 4, 4, 3, 4, 3, 2, 3, 2, 3, 3, 2, 2, 1, 1, 4, 3, 3, 2, 3, 3, 3, 2, 2, 4, 4, 4, 4, 4, 4, 2, 4, 1, 3, 1, 4, 2, 3, 2, 4, 4, 4, 0, 3, 2, 1, 3, 1, 3, 2, 2, 3, 2, 4, 0, 0, 0, 0, 0),
-(6, '', 2, 2, 3, 2, 0, 3, 2, 3, 3, 2, 1, 4, 2, 4, 2, 3, 2, 3, 2, 4, 3, 2, 2, 2, 3, 3, 4, 4, 4, 3, 4, 3, 2, 3, 2, 3, 3, 2, 2, 1, 1, 4, 3, 3, 2, 3, 3, 3, 2, 2, 4, 4, 4, 4, 4, 4, 2, 4, 1, 3, 1, 4, 2, 3, 2, 4, 4, 4, 0, 3, 2, 1, 3, 1, 3, 2, 2, 3, 2, 4, 0, 0, 0, 0, 0),
-(7, '', 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0),
-(8, '', 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0),
-(9, '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
-(10, '', 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(11, '', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0),
-(12, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-(13, 'shifu', 1, 2, 2, 2, 1, 4, 4, 2, 4, 2, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 3, 2, 2, 2, 3, 3, 4, 4, 4, 3, 3, 3, 3, 2, 4, 2, 2, 3, 2, 4, 1, 4, 1, 2, 3, 2, 1, 4, 2, 3, 2, 1, 4, 3, 1, 4, 1, 3, 1, 2, 2, 2, 3, 2, 3, 3, 2, 3, 3, 2, 3, 3, 3, 4, 4, 1, 4, 2, 4, 4, 0, 0, 0, 0, 0),
-(14, 'danna', 2, 1, 3, 2, 3, 2, 3, 2, 2, 2, 2, 3, 2, 4, 2, 2, 3, 3, 2, 1, 1, 2, 2, 3, 2, 3, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 4, 2, 3, 3, 4, 4, 3, 2, 2, 2, 3, 2, 4, 1, 1, 3, 1, 3, 4, 4, 4, 2, 2, 2, 3, 3, 0, 0, 0, 0, 0),
-(15, 'danna', 2, 1, 3, 2, 3, 2, 3, 2, 2, 2, 2, 3, 2, 4, 2, 2, 3, 3, 2, 1, 1, 2, 2, 3, 2, 3, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 4, 2, 3, 3, 4, 4, 3, 2, 2, 2, 3, 2, 4, 1, 1, 3, 1, 3, 4, 4, 4, 2, 2, 2, 3, 3, 0, 0, 0, 0, 0),
-(16, 'danna', 2, 1, 3, 2, 3, 2, 3, 2, 2, 2, 2, 3, 2, 4, 2, 2, 3, 3, 2, 1, 1, 2, 2, 3, 2, 3, 2, 3, 4, 4, 4, 4, 4, 4, 4, 4, 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 4, 2, 3, 3, 4, 4, 3, 2, 2, 2, 3, 2, 4, 1, 1, 3, 1, 3, 4, 4, 4, 2, 2, 2, 3, 3, 0, 0, 0, 0, 0);
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 -- --------------------------------------------------------
 
@@ -195,17 +156,7 @@ CREATE TABLE `usuarios` (
   `telefono` int(20) NOT NULL,
   `usuario` varchar(50) NOT NULL,
   `contra` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Volcado de datos para la tabla `usuarios`
---
-
-INSERT INTO `usuarios` (`id_usuarios`, `nombre`, `apellido_p`, `apellido_m`, `sexo`, `correo`, `telefono`, `usuario`, `contra`) VALUES
-(1, 'luisa', 'jimenez', 'oliva', 'm', 'ljrz@gmail.com', 425664654, 'nuevo_usuario', '1234'),
-(2, 'alfredo', 'juarez', 'espinoza', 'h', 'alfredojuarezdd@gmail.com', 2147483647, 'shifu1', '1234'),
-(3, 'alfredo', 'juarez', 'espinoza', 'h', 'alfredojuarezdd@gmail.com', 2147483647, 'shifu', '123'),
-(4, 'danna', 'gonzales', 'segura', 'm', 'dann@gmail.com', 2147483647, 'danna', '123');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Índices para tablas volcadas
@@ -243,25 +194,25 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `logg`
 --
 ALTER TABLE `logg`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `preguntas`
 --
 ALTER TABLE `preguntas`
-  MODIFY `id_preg` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_preg` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `respuestas`
 --
 ALTER TABLE `respuestas`
-  MODIFY `id_res` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_res` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuarios` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_usuarios` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
