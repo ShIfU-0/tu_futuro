@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Nuevo Usuario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='inicio.css'>
+    <link rel="shortcut icon" href="\tu_futuro\IMAGENES\logoo.png">
+    <link rel='stylesheet' type='text/css' media='screen' href='usu.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <a id="logo" href="\tu_futuro\HTML\inicio.html">
+            <span class="site-name "> REGRESAR</span>
+            <span class="site-desc">a la pagina principal</span>
+        </a>
+           <nav>
+            <ul>
+                <li><a href="#">Contactanos </a></li>
+            </ul>
+        </nav><!-- / nav -->
+        </div>
+    </header>
+<section>
+     <center><h1>Bienvenido</h1></center>
+     <center><h2>Vamos a crear un nuevo usuario para ti</h2></center>
+    </section>
+
+    <div id="usua">
+    <section id="info">
+        <form action="guardar_info.php" method="post" enctype="multipart/form-data">
+            <p>Empecemos por tus datos personales</p>
+            <P>Nombre:<input type="text" required name="nombre" placeholder="Nombre.."></p>
+            <P>Apellido Paterno :<input type="text" required name="apellido_p" placeholder="Apellido P..."></p>
+            <P>Apellido Matetrno:<input type="text" required name="apellido_m" placeholder="Apellido M..."></p>   
+            <p>Sexo: <input type="text" required name="sexo" placeholder="sexo.."></p> 
+            <p>Correo: <input type="email"required name="correo" placeholder="ejemplo@email.com"></p>   
+            <p>Telefono: <input type="text" name="telefono" placeholder="5537373737"></p>
+            <p>Nombre de usuario: <input type="text" required name="usuario" placeholder="Usuario"></p>
+            <p>Contrasena <input type="password" required name="contra" placeholder="Contrasena"></p>
+            <input type="submit" name="Aceptar" value="Aceptar">  
+           </form>
+</section>
+</div>
+</body>
+</html>

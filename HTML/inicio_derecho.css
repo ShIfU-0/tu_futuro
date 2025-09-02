@@ -1,0 +1,22 @@
+#derecha nav {
+    padding: 10px;
+    margin: 0px;
+    background-color: #333;
+    height: 850px;
+    width: 130px;
+    position: fixed;
+}
+#derecha ul li ul li {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+#derecha a{
+    font-size: 11px;
+    color: white;
+}
+#derecha a:hover{
+    color: #0b76a6;
+    background: #333;
+}
+

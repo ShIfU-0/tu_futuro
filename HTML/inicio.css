@@ -1,0 +1,160 @@
+.container{
+    color: white;
+    font-style: italic;
+   background-color: #333; 
+    height: 80px;
+}
+.container{
+background: #333;
+color: white;
+height: 80px;
+
+width: 100%; /*hacemos que la cabecera ocupe el ancho completo de la pag*/
+left: 0; /*pocicion de la cabecera de lado izquierdo*/
+top: 0; /* y hasta arrriba */
+position: fixed; /*por ultimo ponemos la cabecera conm una pocicioin fija */ 
+}
+
+body {
+ margin: 0%;
+ padding: 0%;
+ font-family: Arial, Helvetica, sans-serif;
+ color: #666;
+ background: ghostwhite;
+ font-size: 1em;
+ line-height: 1.5em;
+
+ padding-top: 80px; /*relleno superor igual a la altura de la cabezera*/
+}
+
+.container a {
+color:white;
+}
+
+#logo{
+    float: left;
+    padding: 15px 0 0 20px;
+    text-decoration: none;
+}
+
+#logo:hover {
+ color: #0b76a6;
+}
+
+#logo .site-name{
+  display: block;
+  font-weight: 300;
+  font-size: 0.8em;
+
+}
+
+#logo .site-desc{
+    display: block;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
+  }
+
+ nav{
+    float: right;
+
+ } 
+ nav ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    padding-right: 20px;
+ }
+ nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+nav ul li a{
+    display: block;
+    padding: 0 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #0b76a6;   
+}
+
+#conten{
+    background: #f2f2f2;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+
+}
+#conten h1 h2{
+    padding: 40px;
+}
+
+#footer{
+    background: #666;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+#footer p{
+    margin: 0px;
+}
+h1{
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+#i1{
+    margin: 10px;
+    margin-left: 270px;
+    width: 190px;
+    padding: 0%;  
+}
+#i2{
+    margin: 10px;
+    margin-left: 50px;
+    width: 190px;
+    padding: 0%;  
+}
+#i3{
+    margin: 10px;
+    margin-left: 50px;
+    width: 190px;
+    padding: 0%;  
+}
+
+img{
+    margin:0 50px;
+    display: inline-block;
+}
+
+#ii1{
+    text-align: right;
+    display: inline-block;
+    margin-left: 0px;
+    padding: 0%;
+    margin: 10px;
+}
+
+#ii2{
+    text-align: center;
+    display: inline-block;
+    padding: 0%;
+    margin: 20px;
+}
+
+#ii3{
+    text-align: left;
+    display: inline-block;
+    padding: 0%;
+    margin: 20px;
+}
+
+#ilo{
+   width: 10px;
+   height: 10px; 
+}

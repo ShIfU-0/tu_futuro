@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Agregar preguntas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='inicio.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        <a id="logo" href="\tu_futuro\HTML\inicio.html">
+            <span class="site-name "> REGRESAR</span>
+            <span class="site-desc">a la pagina principal</span>
+        </a>
+           <nav>
+            <ul>
+                <li><a href="#">Contactanos </a></li>
+            </ul>
+        </nav><!-- / nav -->
+        </div>
+    </header>
+    <section>
+    <center><h1>Ingresa la pregunta</h1></center>
+    <form action="guardar_preg.php" method="post" enctype="multipart/form-data">
+     <P>Ingresa la pregunta:<input type="text" required name="pregunta" ></p><br>
+      <input type="submit" name="aceptar" value="aceptar">  
+    </section>
+</body>
+</html>
