@@ -48,8 +48,8 @@ cd tu_futuro
 
 ### 2. Configurar la Base de Datos
 1. Crear una base de datos MySQL llamada `proyecto`
-2. Importar la estructura de la base de datos (si existe un archivo SQL)
-3. Configurar las credenciales en `HTML/conexion.php`:
+2. Importar la base de datos la cual contiene toda la estructura
+4. Configurar las credenciales en `HTML/conexion.php`:
 
 ```php
 $cone = new mysqli('localhost', 'root', '', 'proyecto');
